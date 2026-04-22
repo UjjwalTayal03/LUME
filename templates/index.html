@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUME</title>
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">LUME</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Smart PDF Question Answering</h1>
+    <p>Upload documents, ask questions instantly, and get intelligent responses powered by AI.</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📄 Upload PDF</h2>
+        <p>Add your file securely and prepare it for analysis.</p>
+        <input type="file" id="pdfFile">
+        <button onclick="uploadPDF()">Upload File</button>
+        <p id="uploadStatus"></p>
+    </div>
+
+    <div class="card">
+        <h2>💬 Ask Questions</h2>
+        <p>Type any question related to your uploaded document.</p>
+        <input type="text" id="query" placeholder="Ask from document...">
+        <button onclick="askQuestion()">Ask Now</button>
+        <p id="answer"></p>
+    </div>
+
+    <div class="info-grid">
+
+        <div class="mini-card">
+            <h3>⚡ Fast Processing</h3>
+            <p>Instant extraction and semantic understanding of PDF content.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>🔒 Secure Uploads</h3>
+            <p>Your files stay private and are used only for answering queries.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>🧠 AI Powered</h3>
+            <p>Uses modern NLP methods to understand context deeply.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>📚 Ideal For</h3>
+            <p>Students, researchers, office work, manuals and reports.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>© 2026 LUME • Intelligent Document Assistant ✨</p>
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
